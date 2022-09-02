@@ -35,5 +35,11 @@ public class MysqlRepository implements BookRepository{
         // TODO Auto-generated method stub
         return null;
     }
+
+    @Override
+    public List<Book> findByTitle(String title) {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
 }

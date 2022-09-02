@@ -52,5 +52,12 @@ public class MemoryBookRepository implements BookRepository {
     public Book delete(String bookId) {
         return booksMap.remove(bookId);
     }
+
+    @Override
+    public List<Book> findByTitle(String title) {
+        return booksMap.values().stream()
+                .filter(book -> book.getTitle().toLowerCase().indexOf(title.toLowerCase()) >= 0)
+                .collect(Collectors.toList());
+    }
     
 }
