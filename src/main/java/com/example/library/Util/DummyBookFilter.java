@@ -19,7 +19,7 @@ public class DummyBookFilter {
     public void init(){
 
         bookService.addBook(
-                new Book(null, "El señor de los anillos", "libro completo de la trilogía", "J.R.R Tolkien", 500, 2));
+                new Book(null, "El símbolo pérdido", "Tercer libro", "Dan Brown", 400, 8));
 
         try {
                 Thread.sleep(100);
@@ -27,7 +27,7 @@ public class DummyBookFilter {
         }
 
         bookService.addBook(
-                new Book(null, "Harry Potter y la cámara secreta", "Segundo libro de la trilogía", "J.K. Rowling", 300, 5));
+                new Book(null, "Harry Potter y la cámara secreta", "Segundo libro de la saga", "J.K. Rowling", 300, 5));
 
         try {
                 Thread.sleep(100);
